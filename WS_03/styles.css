@@ -1,0 +1,123 @@
+p {
+      color: rgb(52, 5, 52);
+    }
+    
+    
+    h1 {
+      font-size: 2em;
+    }
+
+.content-box {
+  padding: 20px;
+  margin: 10px;
+  background-color:  #f9f4fa;
+  border: 1px solid #010101;
+}
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid rgb(248, 243, 245);
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #e581c0;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #9a1b74;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #f184b0;
+      color: rgb(243, 240, 236);
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #f755bf;
+    }
+    .transition-button {
+        background-color: lightpink;
+        padding: 20px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.8s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+        transform: translateX(100px);
+      }
+     
+      .animation-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+        position: relative;
+        animation: moveBox 2s infinite alternate;
+      }
+      
+      @keyframes moveBox {
+        from {
+          left: 80;
+        }
+        to {
+          left: (80px);
+        }
+      } 
+
+    
+.pseudo-list li:nth-child(odd) {
+        background-color: white;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+      
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+     
+        This is a sample quote.
+     
+ .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
